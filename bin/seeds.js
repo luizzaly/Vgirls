@@ -6,7 +6,7 @@
 const mongoose = require("mongoose");
 const bcrypt = require("bcrypt");
 const User = require("../models/User");
-const Cards = require("../models/Cards");
+const Bodypart = require("../models/Bodypart");
 
 const bcryptSalt = 10;
 
@@ -32,7 +32,7 @@ let users = [
   }
 ];
 
-let cards = [
+let bodypart = [
   {
     title: "Clitoris",
     etymology:
