@@ -5,16 +5,17 @@ import Vulva from "./containers/Vulva";
 import Overview from "./components/Overview";
 
 import "./App.css";
-import Navbar from "./components/Navbar";
 import Index from "./containers/Index";
 import Signup from "./components/Signup";
 import Login from "./components/Login";
+import Navbar from "./components/Nav";
 
 function App() {
   return (
     <div className="App">
-      <h1>VGirls</h1>
       <Navbar />
+      <h1>VGirls</h1>
+
       <BrowserRouter>
         <Switch>
           <Route exact path="/" component={Index} />
