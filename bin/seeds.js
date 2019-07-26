@@ -45,12 +45,17 @@ let bodypart = [
   },
   {
     title: "Vestibulum vaginae",
+    embryology:
+      "Did you know that girls and boys have the same genitalia? ...well, we had. Until the 12th pregnancy week we have an identical genitalia. Does that mean we all had a small penis at one point? Yes and no. Maybe it was a giant clitoris..",
 
     description:
       "The clitoris, female urethra and the genital opening is located in the “front yard” (Vestibulum vaginae) of the vulva. Some glands are located at the vestibulum vaginae to lubricate the delicate tissue."
   },
   {
     title: "Labia majora pudendi",
+    embryology:
+      "Did you know that girls and boys have the same genitalia? ...well, we had. Until the 12th pregnancy week we have an identical genitalia. Does that mean we all had a small penis at one point? Yes and no. Maybe it was a giant clitoris..",
+
     description:
       "We want to introduce you to our beautiful airbags. The outer labias! They protect our super sensible and important female inner genitalia and for that, they are made of a lot of fat tissue. The labias have normal skin. That means, they are not immune to skin imperfections, like the skin on our faces.",
 
@@ -59,6 +64,9 @@ let bodypart = [
   },
   {
     title: "Labia minora pudendi",
+    embryology:
+      "Did you know that girls and boys have the same genitalia? ...well, we had. Until the 12th pregnancy week we have an identical genitalia. Does that mean we all had a small penis at one point? Yes and no. Maybe it was a giant clitoris..",
+
     description:
       "Our inner labias are more delicate and more sensitive than their outer counterpart. Their main function is to seal. When sexually aroused, the inner labias start to fill up with blood and expand. The inner labia are made of mucosa, different than the outer labia, which are made of normal skin. The inner labia can be creased and wrinkled.",
     info:
@@ -66,6 +74,9 @@ let bodypart = [
   },
   {
     title: "Hymen",
+    embryology:
+      "Did you know that girls and boys have the same genitalia? ...well, we had. Until the 12th pregnancy week we have an identical genitalia. Does that mean we all had a small penis at one point? Yes and no. Maybe it was a giant clitoris..",
+
     description:
       "The hymen is a thin tissue. Not everyone has one. It is like ",
     info:
