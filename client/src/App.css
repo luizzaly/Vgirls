@@ -11,6 +11,8 @@
   font-style: normal;
   font-weight: 400;
   color: #323794;
+  margin: 20px;
+  padding: 40px;
 }
 
 .info-card {
@@ -19,6 +21,8 @@
   font-weight: 200;
   text-align: left;
   align-content: center;
+  color: #323794;
+  margin: 20px;
 }
 
 .butn {
@@ -32,6 +36,8 @@
   background: white;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
+  border: none;
+  margin: 60px;
 }
 
 .embryology {
