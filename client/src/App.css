@@ -1,3 +1,38 @@
 .nav-style {
   text-decoration: none;
 }
+.overview {
+  height: 100vh;
+  text-align: center;
+  background-color: #ffbbba;
+}
+.overview h2 {
+  font-family: "Baloo";
+  font-style: normal;
+  font-weight: 400;
+  color: #323794;
+}
+
+.info-card {
+  font-family: "Comfortaa";
+  font-style: normal;
+  font-weight: 200;
+  text-align: left;
+  align-content: center;
+}
+
+.butn {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  color: #ffbbba;
+  font-family: "Baloo";
+  font-style: normal;
+  font-weight: 400;
+  background: white;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.embryology {
+}

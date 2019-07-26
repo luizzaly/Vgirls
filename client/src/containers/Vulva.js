@@ -36,10 +36,10 @@ export default class Vulva extends Component {
   };
 
   render() {
-    // let bodypart = this.state.vulva.find(part => {
-    //   return part.title === this.state.selected;
-    // });
-    // console.log(bodypart);
+    let bodypart = this.state.vulva.find(part => {
+      return part.title === this.state.selected;
+    });
+    console.log(bodypart);
 
     return (
       <div>
