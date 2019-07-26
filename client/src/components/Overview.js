@@ -32,12 +32,14 @@ export default class Overview extends Component {
     console.log("render");
 
     return (
-      <div>
-        {/* {this.props.location.state.title} */}
-        {bodypart && bodypart.title}
-        <p>Ethynology (how it all starts)</p>
-        <p>Description (how it all works)</p>
-        <p>More Info (all you need to know)</p>
+      <div className="overview">
+        <h2>{bodypart && bodypart.title}</h2>
+        <div className="info-card">
+          <p>Embryology(how it all starts)</p>
+          <p>Description (how it all works)</p>
+          <p>More Info (all you need to know)</p>
+        </div>
+        <button className="butn">LEARN MORE</button>
       </div>
     );
   }

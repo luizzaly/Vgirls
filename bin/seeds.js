@@ -35,7 +35,7 @@ let users = [
 let bodypart = [
   {
     title: "Clitoris",
-    etymology:
+    embryology:
       "Did you know that girls and boys have the same genitalia? ...well, we had. Until the 12th pregnancy week we have an identical genitalia. Does that mean we all had a small penis at one point? Yes and no. Maybe it was a giant clitoris..",
 
     description:

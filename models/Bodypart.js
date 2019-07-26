@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 
 const bodypartSchema = new Schema({
   title: String,
-  etymology: String,
+  embryology: String,
   description: String,
   info: String
 });
