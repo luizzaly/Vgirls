@@ -5,9 +5,6 @@ const Home = () => {
   return (
     <div>
       <div>
-        <h1>VGirls</h1>
-      </div>
-      <div>
         <img src="/img/vagina.jpeg" alt="Vulva orange" />
       </div>
       <div>

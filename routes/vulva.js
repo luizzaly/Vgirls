@@ -13,8 +13,17 @@ router.get("/", (req, res) => {
 });
 
 router.get("/:id", (req, res) => {
-  const id = req.params.id.title;
-  console.log(req.params);
+  const id = req.params.id;
+  const { title, etymology, description, info } = req.body;
+
+  Bodypart.findById(id)
+
+    .then(bodypart => {
+      res.json(bodypart);
+    })
+    .catch(err => {
+      res.json(err);
+    });
 });
 
 module.exports = router;
