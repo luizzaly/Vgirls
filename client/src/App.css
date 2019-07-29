@@ -3,7 +3,8 @@
 }
 .overview {
   height: 100vh;
-  text-align: center;
+  width: 100vw;
+
   background-color: #ffbbba;
 }
 .overview h2 {
@@ -11,8 +12,7 @@
   font-style: normal;
   font-weight: 400;
   color: #323794;
-  margin: 20px;
-  padding: 40px;
+  margin: 20px 0px 20px 0px;
 }
 
 .info-card {
@@ -22,7 +22,7 @@
   text-align: left;
   align-content: center;
   color: #323794;
-  margin: 20px;
+  padding: 20px;
 }
 
 .butn {
@@ -37,7 +37,7 @@
   padding: 10px 20px 10px 20px;
   text-decoration: none;
   border: none;
-  margin: 60px;
+  margin: 0px 0px 0px 20px;
 }
 
 .embryology {
