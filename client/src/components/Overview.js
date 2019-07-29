@@ -43,7 +43,9 @@ export default class Overview extends Component {
           <p>More Info (all you need to know)</p>
         </div>
         <button className="butn">
-          <Link to={`/vulva/${vulvaPartTitle}/embryology`}>LEARN MORE</Link>
+          <Link class="btn-overview" to={`/vulva/${vulvaPartTitle}/embryology`}>
+            LEARN MORE
+          </Link>
         </button>
       </div>
     );

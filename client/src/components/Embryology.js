@@ -35,12 +35,17 @@ export default class Embryology extends Component {
     console.log("render");
 
     return (
-      <div className="embryology">
-        <h2>Embryology(how it all starts)</h2>
-        <p>{bodypart && bodypart.embryology}</p>
-        <button className="butn">
-          <Link to={`/vulva/${vulvaPartTitle}/description`}>
-            To Description
+      <div className="overview-embryology">
+        <div className="info-card">
+          <h2>Embryology(how it all starts)</h2>
+          <p>{bodypart && bodypart.embryology}</p>
+        </div>
+        <button className="butn embryology">
+          <Link
+            class="btn-embryology"
+            to={`/vulva/${vulvaPartTitle}/description`}
+          >
+            TO DESCRIPTION
           </Link>
         </button>
       </div>

@@ -6,6 +6,7 @@ import Overview from "./components/Overview";
 import Embryology from "./components/Embryology";
 import Description from "./components/Description";
 import Info from "./components/Info";
+import Video from "./components/Video";
 
 import "./App.css";
 import Index from "./containers/Index";
@@ -31,6 +32,7 @@ function App() {
             component={Description}
           />
           <Route exact path="/vulva/:title/info" component={Info} />
+          <Route exact path="/vulva/:title/gif" component={Video} />
           <Route exact path="/auth/signup" component={Signup} />
           <Route exact path="/auth/login" component={Login} />}
         </Switch>
