@@ -14,31 +14,51 @@ import Signup from "./components/Signup";
 import Login from "./components/Login";
 import Navbar from "./components/Nav";
 
-function App() {
-  return (
-    <div className="App">
-      <Navbar />
-      <h1>VGirls</h1>
+class App extends React.Component {
+  state = {
+    user: this.props.user
+  };
 
-      <BrowserRouter>
-        <Switch>
-          <Route exact path="/" component={Index} />
-          <Route exact path="/vulva" component={Vulva} />
-          <Route exact path="/vulva/:title" component={Overview} />
-          <Route exact path="/vulva/:title/embryology" component={Embryology} />
-          <Route
-            exact
-            path="/vulva/:title/description"
-            component={Description}
-          />
-          <Route exact path="/vulva/:title/info" component={Info} />
-          <Route exact path="/vulva/:title/gif" component={Video} />
-          <Route exact path="/auth/signup" component={Signup} />
-          <Route exact path="/auth/login" component={Login} />}
-        </Switch>
-      </BrowserRouter>
-    </div>
-  );
+  setUser = user => {
+    this.setState({ user });
+  };
+  render() {
+    return (
+      <div className="App">
+        <BrowserRouter>
+          <Navbar user={this.state.user} />
+
+          <Switch>
+            <Route exact path="/" component={Index} />
+            <Route exact path="/vulva" component={Vulva} />
+            <Route exact path="/vulva/:title" component={Overview} />
+            <Route
+              exact
+              path="/vulva/:title/embryology"
+              component={Embryology}
+            />
+            <Route
+              exact
+              path="/vulva/:title/description"
+              component={Description}
+            />
+            <Route exact path="/vulva/:title/info" component={Info} />
+            <Route
+              exact
+              path="/auth/signup"
+              // component={Signup}
+              render={props => <Signup setUser={this.setUser} {...props} />}
+            />
+            <Route
+              exact
+              path="/auth/login" //component={Login}
+              render={props => <Login setUser={this.setUser} {...props} />}
+            />
+          </Switch>
+        </BrowserRouter>
+      </div>
+    );
+  }
 }
 
 export default App;

@@ -165,4 +165,50 @@ video#background-video {
 .gif {
   width: 100vw;
   height: auto;
+.nav-style {
+  background-color: #ffbbba;
+  color: white;
+  font-family: "Comfortaa";
+  font-style: normal;
+  font-weight: 200;
+}
+
+.formstyle {
+  background-color: #ffbbba;
+  height: 100vh;
+  color: #323794;
+  font-family: "Comfortaa";
+  font-style: normal;
+  font-weight: 200;
+  padding: 20px;
+}
+
+.loginbtn {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  color: #ffbbba;
+  font-family: "Baloo";
+  font-style: normal;
+  font-weight: 400;
+  background: white;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  border: none;
+  margin: 0px 0px 0px 20px;
+  bottom: 40px;
+  position: center;
+}
+
+.signup-style {
+  background-color: #ffbbba;
+  height: 100vh;
+  color: #323794;
+  font-family: "Comfortaa";
+  font-style: normal;
+  font-weight: 200;
+}
+
+.center {
+  margin: 30px;
 }
