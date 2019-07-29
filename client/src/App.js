@@ -26,7 +26,6 @@ class App extends React.Component {
       <div className="App">
         <BrowserRouter>
           <Navbar user={this.state.user} />
-          <h1>VGirls</h1>
 
           <Switch>
             <Route exact path="/" component={Index} />

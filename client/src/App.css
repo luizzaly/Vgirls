@@ -48,7 +48,34 @@
   font-weight: 200;
 }
 
-.loginform {
+.formstyle {
+  background-color: #ffbbba;
+  height: 100vh;
+  color: #323794;
+  font-family: "Comfortaa";
+  font-style: normal;
+  font-weight: 200;
+  padding: 20px;
+}
+
+.loginbtn {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  color: #ffbbba;
+  font-family: "Baloo";
+  font-style: normal;
+  font-weight: 400;
+  background: white;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  border: none;
+  margin: 0px 0px 0px 20px;
+  bottom: 40px;
+  position: center;
+}
+
+.signup-style {
   background-color: #ffbbba;
   height: 100vh;
   color: #323794;
@@ -57,12 +84,6 @@
   font-weight: 200;
 }
 
-.loginbtn {
-  border-radius: 28px;
-  font-family: Arial;
-  color: #ffbbba;
-  font-size: 20px;
-  background: white;
-  padding: 10px 20px 10px 20px;
-  text-decoration: none;
+.center {
+  margin: 30px;
 }
