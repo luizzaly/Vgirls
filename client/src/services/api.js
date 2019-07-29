@@ -20,4 +20,4 @@ const signup = (username, password, email) =>
 
 const logout = () => axios.post("/auth/logout").then(response => response.data);
 
-export default { login, logout, signup };
+export { login, logout, signup };

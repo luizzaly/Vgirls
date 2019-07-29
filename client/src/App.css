@@ -40,5 +40,29 @@
   margin: 0px 0px 0px 20px;
 }
 
-.embryology {
+.nav-style {
+  background-color: #ffbbba;
+  color: white;
+  font-family: "Comfortaa";
+  font-style: normal;
+  font-weight: 200;
+}
+
+.loginform {
+  background-color: #ffbbba;
+  height: 100vh;
+  color: #323794;
+  font-family: "Comfortaa";
+  font-style: normal;
+  font-weight: 200;
+}
+
+.loginbtn {
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffbbba;
+  font-size: 20px;
+  background: white;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
 }

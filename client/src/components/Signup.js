@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Form, Button, Alert } from "react-bootstrap";
-import signup from "../services/api";
+import { signup } from "../services/api";
 
 export default class Signup extends Component {
   state = {
@@ -25,9 +25,10 @@ export default class Signup extends Component {
     signup(username, password, email)
       .then(data => {
         this.props.setUser(data);
-        this.props.push("/signup");
+        this.props.history.push("/vulva");
       })
       .catch(err => {
+        console.log(err);
         this.setState({ error: err.response.data.message });
       });
   };

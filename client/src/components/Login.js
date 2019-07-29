@@ -1,12 +1,11 @@
 import React, { Component } from "react";
-import login from "../services/api";
+import { login } from "../services/api";
 import { Form, Button, Alert } from "react-bootstrap";
 
 export default class Login extends Component {
   state = {
     username: "",
     password: "",
-    email: "",
     error: ""
   };
 
@@ -26,7 +25,7 @@ export default class Login extends Component {
     login(username, password, email)
       .then(data => {
         this.props.setUser(data);
-        this.props.push("/login");
+        this.props.history.push("/vulva");
       })
       .catch(err => {
         this.setState({ error: err.response.data.message });
@@ -35,7 +34,7 @@ export default class Login extends Component {
 
   render() {
     return (
-      <Form onSubmit={this.handleSubmit}>
+      <Form className="loginform" onSubmit={this.handleSubmit}>
         <Form.Group>
           <Form.Label htmlFor="username">Username:</Form.Label>
           <Form.Control
@@ -56,22 +55,14 @@ export default class Login extends Component {
             onChange={this.handleChange}
           />
         </Form.Group>
-        <Form.Group>
-          <Form.Label htmlFor="email">Email:</Form.Label>
-          <Form.Control
-            type="email"
-            name="email"
-            id="email"
-            value={this.state.email}
-            onChange={this.handleChange}
-          />
-        </Form.Group>
 
         {this.state.error && (
           <Alert variant="warning">{this.state.error}</Alert>
         )}
 
-        <Button type="submit">Login</Button>
+        <Button className="loginbtn" type="submit">
+          LOGIN
+        </Button>
       </Form>
     );
   }
