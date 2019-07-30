@@ -24,10 +24,14 @@ export default class Login extends Component {
 
     login(username, password, email)
       .then(data => {
-        this.props.setUser(data);
-        this.props.history.push("/vulva");
+        console.log(data);
+        if (!data.message) {
+          this.props.setUser(data);
+          this.props.history.push("/vulva");
+        }
       })
       .catch(err => {
+        console.log(err);
         this.setState({ error: err.response.data.message });
       });
   };
