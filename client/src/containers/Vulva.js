@@ -52,6 +52,8 @@ export default class Vulva extends Component {
     });
   };
 
+  handleSubmit = () => {};
+
   render() {
     let bodypart = this.state.vulva.find(part => {
       return part.title === this.state.selected;
@@ -76,7 +78,11 @@ export default class Vulva extends Component {
         ) : (
           <div
             className="image-container"
-            style={{ width: "414px", position: "relative", margin: " 0 auto" }}
+            style={{
+              width: "414px",
+              position: "relative",
+              marginTop: "26vh"
+            }}
           >
             <Link to="/vulva/Labia majora pudendi">
               <img
@@ -157,6 +163,10 @@ export default class Vulva extends Component {
                 style={{ position: "absolute", top: "250px", left: "50%" }}
               />
             </Link>
+            <button onClick={this.handleSubmit} className="btn-cut">
+              <i class="fas fa-cut" />
+              <Link class="" to />
+            </button>
           </div>
         )}
       </div>

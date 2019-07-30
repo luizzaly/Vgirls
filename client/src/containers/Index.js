@@ -4,18 +4,20 @@ import Carousel from "react-bootstrap/Carousel";
 const Home = () => {
   return (
     <div>
+      <div class="header-container" />
+      <h1 class="valueprop">
+        No Tabus here!
+        <br /> Let's discover the female genitales
+      </h1>
       <div>
-        <img src="/img/vagina.jpeg" alt="Vulva orange" />
-      </div>
-      <div>
-        <h2>About us</h2>
+        <h2 class="header-text">We are all different</h2>
       </div>
       <div>
         <Carousel>
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="/img/grapefruit.jpg"
+              src="/img/vagina1.png"
               alt="First slide"
             />
             <Carousel.Caption>
@@ -26,7 +28,7 @@ const Home = () => {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="/img/toast.jpg"
+              src="/img/vagina2.png"
               alt="Third slide"
             />
 
@@ -38,7 +40,7 @@ const Home = () => {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="/img/peach.jpg"
+              src="/img/vagina3.png"
               alt="Third slide"
             />
 
@@ -47,6 +49,17 @@ const Home = () => {
               <p>
                 Praesent commodo cursus magna, vel scelerisque nisl consectetur.
               </p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src="/img/vagina4.png"
+              alt="First slide"
+            />
+            <Carousel.Caption>
+              <h3>First slide label</h3>
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>

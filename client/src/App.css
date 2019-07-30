@@ -1,16 +1,55 @@
 .nav-style {
   text-decoration: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 30000000;
+}
+
+.body-container {
+  margin-top: 56px;
+}
+.image-container {
+  margin-top: 56px;
+}
+
+.header-container {
+  background-image: url("/img/header.png");
+  height: 60vh;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.valueprop {
+  position: absolute;
+  top: 48%;
+  padding: 0px 0px 0px 20px;
+  font-size: 30px;
+  font-family: "Comfortaa";
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+
+h2.header-text {
+  font-size: 30px;
+  font-family: "Comfortaa";
+  font-weight: 600;
+  letter-spacing: -1px;
+  padding: 20px 0px 0px 20px;
 }
 .overview {
   height: 100vh;
   width: 100vw;
   background-color: #ffbbba;
+  margin-top: 56px;
 }
 
 .overview-embryology {
   height: 100vh;
   width: 100vw;
   background-color: white;
+  margin-top: 56px;
 }
 .overview-embryology h2 {
   font-family: "Baloo";
@@ -165,6 +204,8 @@ video#background-video {
 .gif {
   width: 100vw;
   height: auto;
+}
+
 .nav-style {
   background-color: #ffbbba;
   color: white;
@@ -211,4 +252,19 @@ video#background-video {
 
 .center {
   margin: 30px;
+}
+
+.btn-cut {
+  padding: 10px;
+  background-color: pink;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  margin-left: 10px;
+  border-style: none;
+  margin-top: 30px;
+}
+
+.fa-cut {
+  color: white;
 }
