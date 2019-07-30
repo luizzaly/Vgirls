@@ -15,7 +15,7 @@ router.get("/", (req, res, next) => {
     });
 });
 
-router.post("/:userId", (req, res, next) => {
+router.post("/", (req, res, next) => {
   if (!req.isAuthenticated()) return res.redirect("/auth/login");
   console.log("BODY: ", req.body);
   const { username, email, password } = req.body;
@@ -30,9 +30,25 @@ router.post("/:userId", (req, res, next) => {
     query.password = hashPass;
   }
 
-  User.findByIdAndUpdate(id, { username, email, password })
-    .then(() => {
-      res.json({ message: `User with id ${id} was successfully updated` });
+  User.findByIdAndUpdate(
+    req.user._id,
+    { username, email, password },
+    { new: true }
+  )
+    .then(user => {
+      res.json(user);
+    })
+    .catch(err => {
+      console.log("Error", err);
+    });
+});
+
+router.get("/profile", (req, res) => {
+  const userId = req.params.id;
+  const { username, password, email } = req.body;
+  User.findById(userId)
+    .then(user => {
+      res.json(user);
     })
     .catch(err => {
       res.json(err);

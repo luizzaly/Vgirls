@@ -86,4 +86,7 @@ app.use("/auth", authRoutes);
 const vulva = require("./routes/vulva");
 app.use("/vulva", vulva);
 
+const profile = require("./routes/profile");
+app.use("/profile", profile);
+
 module.exports = app;

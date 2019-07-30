@@ -13,6 +13,7 @@ import Index from "./containers/Index";
 import Signup from "./components/Signup";
 import Login from "./components/Login";
 import Navbar from "./components/Nav";
+import Profile from "./components/Profile";
 
 class App extends React.Component {
   state = {
@@ -54,6 +55,18 @@ class App extends React.Component {
               path="/auth/login" //component={Login}
               render={props => <Login setUser={this.setUser} {...props} />}
             />
+            <Route
+              exact
+              path="/profile"
+              render={props => (
+                <Profile
+                  setUser={this.setUser}
+                  user={this.state.user}
+                  {...props}
+                />
+              )}
+            />
+            <Route exact path="/profile/:userId" component={Profile} />
           </Switch>
         </BrowserRouter>
       </div>
