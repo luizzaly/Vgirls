@@ -100,7 +100,7 @@ export default class Vulva extends Component {
                 style={{ position: "absolute", top: "50px", left: "38%" }}
               />
             </Link>
-            <Link to="/vulva/inner">
+            <Link to="/vulva/Introitus vaginae">
               <img
                 src="/img/Introitusvaginae.png"
                 alt=""
@@ -136,9 +136,9 @@ export default class Vulva extends Component {
                 style={{ position: "absolute", top: "8px", left: "49.5%" }}
               />
             </Link>
-            <Link to="/vulva">
+            <Link to="/vulva/Urethral Opening">
               <img
-                src="/img/urethra.png"
+                src="/img/urethralopening.png"
                 alt=""
                 style={{ position: "absolute", top: "87px", left: "51.5%" }}
               />
