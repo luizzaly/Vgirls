@@ -20,4 +20,13 @@ const signup = (username, password, email) =>
 
 const logout = () => axios.post("/auth/logout").then(response => response.data);
 
-export { login, logout, signup };
+const profile = (username, password, email) =>
+  axios
+    .post("/profile", {
+      username: username,
+      password: password,
+      email: email
+    })
+    .then(response => response.data);
+
+export { login, logout, signup, profile };

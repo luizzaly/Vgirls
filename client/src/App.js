@@ -21,6 +21,7 @@ import Typeonedescription from "./components/Typeonedescription";
 import Typetwodescription from "./components/Typetwodescription";
 import Typethreedescription from "./components/Typethreedescription";
 import Fullcut from "./components/Fullcut";
+import Profile from "./components/Profile";
 
 class App extends React.Component {
   state = {
@@ -34,7 +35,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <BrowserRouter>
-          <Navbar user={this.state.user} />
+          <Navbar user={this.state.user} setUser={this.setUser} />
 
           <Switch>
             <Route exact path="/" component={Index} />
@@ -87,6 +88,18 @@ class App extends React.Component {
               path="/auth/login" //component={Login}
               render={props => <Login setUser={this.setUser} {...props} />}
             />
+            <Route
+              exact
+              path="/profile"
+              render={props => (
+                <Profile
+                  setUser={this.setUser}
+                  user={this.state.user}
+                  {...props}
+                />
+              )}
+            />
+            <Route exact path="/profile/:userId" component={Profile} />
           </Switch>
         </BrowserRouter>
       </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, Nav } from "react-bootstrap";
+import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { logout } from "../services/api";
 
@@ -17,31 +17,33 @@ const Navi = props => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Navbar.Brand>
-            <Link to="/vulva">Home</Link>
+            <Link to="/vulva">Discover your body</Link>
           </Navbar.Brand>
           <Nav className="mr-auto switchsides">
-            {props.user ? (
-              <>
-                <Navbar.Brand className="profile-icon">
-                  <Link to="/profile">Profile</Link>
-                </Navbar.Brand>
-                <Navbar.Brand>
-                  <Link onClick={() => handleLogout(props)} to="/">
-                    Logout
-                  </Link>
-                </Navbar.Brand>
-              </>
-            ) : (
-              //   <React.Fragment>
-              <>
-                <Navbar.Brand>
-                  <Link to="/auth/signup">Signup</Link>
-                </Navbar.Brand>
-                <Navbar.Brand>
-                  <Link to="/auth/login">Login</Link>
-                </Navbar.Brand>
-              </>
-            )}
+            <NavDropdown title="More" id="basic-nav-dropdown">
+              {props.user ? (
+                <>
+                  <NavDropdown.Item>
+                    <Link to="/profile">Profile</Link>
+                  </NavDropdown.Item>
+                  <NavDropdown.Item>
+                    <Link onClick={() => handleLogout(props)} to="/">
+                      Logout
+                    </Link>
+                  </NavDropdown.Item>
+                </>
+              ) : (
+                //   <React.Fragment>
+                <>
+                  <NavDropdown.Item>
+                    <Link to="/auth/signup">Signup</Link>
+                  </NavDropdown.Item>
+                  <NavDropdown.Item>
+                    <Link to="/auth/login">Login</Link>
+                  </NavDropdown.Item>
+                </>
+              )}
+            </NavDropdown>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
