@@ -166,16 +166,20 @@ export default class Vulva extends Component {
               />
             </Link>
             <div className="flex-container">
-              <button className="btn-cut">
-                <Link className="" to={`/femalegenitalmutilation`}>
-                  <i className="fas fa-cut" />
-                </Link>
-              </button>
-              <button className="btn-cut">
-                <Link className="" to={`/femalegenitalmutilation`}>
-                  <img src="/img/uterus.svg" />
-                </Link>
-              </button>
+              <div>
+                <button className="btn-cut">
+                  <Link className="" to={`/femalegenitalmutilation`}>
+                    <i className="fas fa-cut" />
+                  </Link>
+                </button>
+              </div>
+              <div>
+                <button className="btn-cut">
+                  <Link className="" to={`/femalegenitalmutilation`}>
+                    <img src="/img/uterus.svg" />
+                  </Link>
+                </button>
+              </div>
             </div>
           </div>
         )}

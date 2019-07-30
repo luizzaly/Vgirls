@@ -7,6 +7,7 @@ import Embryology from "./components/Embryology";
 import Description from "./components/Description";
 import Info from "./components/Info";
 import Typeone from "./components/Typeone";
+import Uterus from "./components/Uterus";
 import Video from "./components/Video";
 
 import "./App.css";
@@ -74,6 +75,7 @@ class App extends React.Component {
               path="/type3-explanation"
               component={Typethreedescription}
             />
+            <Route exact path="/uterus" component={Uterus} />
             <Route
               exact
               path="/auth/signup"
