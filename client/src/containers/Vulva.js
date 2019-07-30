@@ -52,7 +52,9 @@ export default class Vulva extends Component {
     });
   };
 
-  handleSubmit = () => {};
+  handleButton = e => {
+    e.preventDefault();
+  };
 
   render() {
     let bodypart = this.state.vulva.find(part => {
@@ -72,8 +74,8 @@ export default class Vulva extends Component {
         {/* after that, this.state.projects is populated by the data from the API */}
 
         {this.state.showGif && ourGif ? (
-          <div class="container-gif">
-            <img class="gif" src={ourGif} alt="" />
+          <div className="container-gif">
+            <img className="gif" src={ourGif} alt="" />
           </div>
         ) : (
           <div
@@ -86,7 +88,7 @@ export default class Vulva extends Component {
           >
             <Link to="/vulva/Labia majora pudendi">
               <img
-                class="basis"
+                className="basis"
                 src="/img/basis.png"
                 alt=""
                 style={{ position: "absolute", top: 0, left: "20%" }}
@@ -163,10 +165,18 @@ export default class Vulva extends Component {
                 style={{ position: "absolute", top: "250px", left: "50%" }}
               />
             </Link>
-            <button onClick={this.handleSubmit} className="btn-cut">
-              <i class="fas fa-cut" />
-              <Link class="" to />
-            </button>
+            <div className="flex-container">
+              <button className="btn-cut">
+                <Link className="" to={`/femalegenitalmutilation`}>
+                  <i className="fas fa-cut" />
+                </Link>
+              </button>
+              <button className="btn-cut">
+                <Link className="" to={`/femalegenitalmutilation`}>
+                  <img src="/img/uterus.svg" />
+                </Link>
+              </button>
+            </div>
           </div>
         )}
       </div>

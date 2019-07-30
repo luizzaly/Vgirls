@@ -256,7 +256,7 @@ video#background-video {
 
 .btn-cut {
   padding: 10px;
-  background-color: pink;
+  background-color: #ffbbba;
   border-radius: 50%;
   height: 50px;
   width: 50px;
@@ -267,4 +267,40 @@ video#background-video {
 
 .fa-cut {
   color: white;
+}
+
+.fgm {
+  margin-top: 10vh !important;
+}
+
+.fgm-header h2 {
+  margin-top: 56px;
+  padding: 0px 0px 0px 20px;
+  font-family: "Baloo";
+  color: #323794;
+  font-weight: 400;
+}
+
+.click-here {
+  position: absolute;
+  top: 8px;
+  right: 26%;
+  font-family: "Baloo";
+  color: #323794;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.click-here:hover {
+  text-decoration: none;
+  color: #ff4ca3;
+}
+
+.fullcut {
+  width: 65%;
+}
+
+.flex-container {
+  flex-direction: column;
+  width: 80px;
 }

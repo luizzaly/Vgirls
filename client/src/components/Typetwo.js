@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
-export default class Typeone extends Component {
+export default class Typetwo extends Component {
   render() {
     return (
       <div>
@@ -9,7 +9,7 @@ export default class Typeone extends Component {
         {/* after that, this.state.projects is populated by the data from the API */}
         ) : (
         <div className="fgm-header">
-          <h2> FGM Type 1</h2>
+          <h2> FGM Type 2</h2>
         </div>
         <div
           className="image-container fgm"
@@ -91,23 +91,37 @@ export default class Typeone extends Component {
               style={{ position: "absolute", top: "172px", left: "28%" }}
             />
           </Link>
-          <Link to="type1-explanation">
+          <Link to="">
             <img
               src="/img/hymen.png"
               alt=""
               style={{ position: "absolute", top: "250px", left: "50%" }}
             />
           </Link>
-          <Link to="/type1-explanation">
+          <Link to="/type3-explanation">
             <img
               src="/img/typeone.png"
               alt=""
               style={{ position: "absolute", top: "5px", left: "45%" }}
             />
           </Link>
+          <Link to="/type2-explanation">
+            <img
+              src="/img/cutright.png"
+              alt=""
+              style={{ position: "absolute", top: "14px", left: "26%" }}
+            />
+          </Link>
+          <Link to="type2-explanation">
+            <img
+              src="/img/cutleft.png"
+              alt=""
+              style={{ position: "absolute", top: "16px", left: "55%" }}
+            />
+          </Link>
 
-          <Link class="click-here" to={`/type1-explanation`}>
-            Click here
+          <Link class="click-here" to="/type2-explanation">
+            Click here ffff
           </Link>
 
           {/* </Link>

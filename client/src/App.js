@@ -6,6 +6,7 @@ import Overview from "./components/Overview";
 import Embryology from "./components/Embryology";
 import Description from "./components/Description";
 import Info from "./components/Info";
+import Typeone from "./components/Typeone";
 import Video from "./components/Video";
 
 import "./App.css";
@@ -13,6 +14,12 @@ import Index from "./containers/Index";
 import Signup from "./components/Signup";
 import Login from "./components/Login";
 import Navbar from "./components/Nav";
+import Mutilationdescription from "./components/Mutilationdescription";
+import Typetwo from "./components/Typetwo";
+import Typeonedescription from "./components/Typeonedescription";
+import Typetwodescription from "./components/Typetwodescription";
+import Typethreedescription from "./components/Typethreedescription";
+import Fullcut from "./components/Fullcut";
 
 class App extends React.Component {
   state = {
@@ -43,6 +50,30 @@ class App extends React.Component {
               component={Description}
             />
             <Route exact path="/vulva/:title/info" component={Info} />
+            <Route
+              exact
+              path="/femalegenitalmutilation"
+              component={Mutilationdescription}
+            />
+            <Route exact path="/type1" component={Typeone} />
+            <Route
+              exact
+              path="/type1-explanation"
+              component={Typeonedescription}
+            />
+
+            <Route exact path="/type2" component={Typetwo} />
+            <Route
+              exact
+              path="/type2-explanation"
+              component={Typetwodescription}
+            />
+            <Route exact path="/type3" component={Fullcut} />
+            <Route
+              exact
+              path="/type3-explanation"
+              component={Typethreedescription}
+            />
             <Route
               exact
               path="/auth/signup"
