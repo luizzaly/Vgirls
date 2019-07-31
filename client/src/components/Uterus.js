@@ -18,7 +18,7 @@ export default class Uterus extends Component {
         >
           <Link to="">
             <img
-              className="f"
+              className="basis"
               src="/img/uterusupperhalf.png"
               alt=""
               style={{
@@ -31,6 +31,7 @@ export default class Uterus extends Component {
           </Link>
           <Link to="">
             <img
+              className="basis"
               src="/img/uterusbottomhalf.png"
               alt=""
               style={{
@@ -43,6 +44,7 @@ export default class Uterus extends Component {
           </Link>
           <Link to="">
             <img
+              className="basis"
               src="/img/uteruspart.png"
               alt=""
               style={{
@@ -55,6 +57,7 @@ export default class Uterus extends Component {
           </Link>
           <Link to="">
             <img
+              className="basis"
               src="/img/vagina.png"
               alt=""
               style={{
@@ -67,6 +70,7 @@ export default class Uterus extends Component {
           </Link>
           <Link to="">
             <img
+              className="basis"
               src="/img/ovaleft.png"
               alt=""
               style={{
@@ -80,6 +84,7 @@ export default class Uterus extends Component {
           </Link>
           <Link to="">
             <img
+              className="basis"
               src="/img/ovaright.png"
               alt=""
               style={{
@@ -93,6 +98,7 @@ export default class Uterus extends Component {
           </Link>
           <Link to="">
             <img
+              className="basis"
               src="/img/oviductleft.png"
               alt=""
               style={{
@@ -106,6 +112,7 @@ export default class Uterus extends Component {
           </Link>
           <Link to="">
             <img
+              className="basis"
               src="/img/oviductright.png"
               alt=""
               style={{
@@ -119,6 +126,7 @@ export default class Uterus extends Component {
           </Link>
           <Link to="">
             <img
+              className="basis"
               src="/img/cervix.png"
               alt=""
               style={{
@@ -129,7 +137,7 @@ export default class Uterus extends Component {
               }}
             />
           </Link>{" "}
-          {/* <div className="flex-container">
+          <div className="flex-container">
             <button className="btn-cut">
               <Link className="" to={`/femalegenitalmutilation`}>
                 <i className="fas fa-cut" />
@@ -137,10 +145,10 @@ export default class Uterus extends Component {
             </button>
             <button className="btn-cut">
               <Link className="" to={`/femalegenitalmutilation`}>
-                <img src="/img/uterus.svg" />
+                <img className="uterusicon" src="/img/uterus.svg" />
               </Link>
             </button>
-          </div> */}
+          </div>
         </div>
       </div>
     );

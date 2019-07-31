@@ -21,7 +21,7 @@ export default class Fullcut extends Component {
         >
           <Link to="/type3-explanation">
             <img
-              class="fullcut"
+              className="basis fullcut"
               src="/img/fullcut.png"
               alt=""
               style={{ position: "absolute", top: 0, left: "20%" }}

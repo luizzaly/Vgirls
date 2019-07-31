@@ -45,7 +45,7 @@ export default class Embryology extends Component {
             class="btn-embryology"
             to={`/vulva/${vulvaPartTitle}/description`}
           >
-            TO DESCRIPTION
+            To description
           </Link>
         </button>
       </div>

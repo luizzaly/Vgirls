@@ -100,13 +100,14 @@ export default class Typeone extends Component {
           </Link>
           <Link to="/type1-explanation">
             <img
+              className="basis"
               src="/img/typeone.png"
               alt=""
               style={{ position: "absolute", top: "5px", left: "45%" }}
             />
           </Link>
 
-          <Link class="click-here" to={`/type1-explanation`}>
+          <Link className="basis click-here" to={`/type1-explanation`}>
             Click here
           </Link>
 

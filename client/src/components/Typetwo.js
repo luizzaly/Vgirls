@@ -43,6 +43,7 @@ export default class Typetwo extends Component {
           </Link>
           <Link to="">
             <img
+              className="basis"
               src="/img/Introitusvaginae.png"
               alt=""
               style={{ position: "absolute", top: "134px", left: "47%" }}
@@ -98,15 +99,22 @@ export default class Typetwo extends Component {
               style={{ position: "absolute", top: "250px", left: "50%" }}
             />
           </Link>
-          <Link to="/type3-explanation">
-            <img
-              src="/img/typeone.png"
-              alt=""
-              style={{ position: "absolute", top: "5px", left: "45%" }}
-            />
-          </Link>
           <Link to="/type2-explanation">
             <img
+              className="basis"
+              src="/img/cut2.png"
+              alt=""
+              style={{
+                position: "absolute",
+                top: "14px",
+                left: "28%",
+                width: "49%"
+              }}
+            />
+          </Link>
+          {/* <Link to="/type2-explanation">
+            <img
+              className="basis"
               src="/img/cutright.png"
               alt=""
               style={{ position: "absolute", top: "14px", left: "26%" }}
@@ -114,14 +122,15 @@ export default class Typetwo extends Component {
           </Link>
           <Link to="type2-explanation">
             <img
+              className="basis"
               src="/img/cutleft.png"
               alt=""
               style={{ position: "absolute", top: "16px", left: "55%" }}
             />
-          </Link>
+          </Link> */}
 
-          <Link class="click-here" to="/type2-explanation">
-            Click here ffff
+          <Link className=" basis click-here" to="/type2-explanation">
+            Click here
           </Link>
 
           {/* </Link>
