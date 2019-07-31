@@ -55,8 +55,6 @@ export default class Profile extends Component {
   render() {
     return (
       <div className="profile">
-        {/* <p>Username:{this.state.user.username}</p> */}
-
         <Form onSubmit={this.handleSubmit}>
           <Form.Group>
             <Form.Label htmlFor="username">Change your Username:</Form.Label>
