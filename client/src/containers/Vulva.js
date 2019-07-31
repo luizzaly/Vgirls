@@ -73,6 +73,7 @@ export default class Vulva extends Component {
           </Link>
           <Link to="/vulva/Vestibulum vaginae">
             <img
+              className="basis"
               src="/img/Scheide.png"
               alt=""
               style={{ position: "absolute", top: "50px", left: "38%" }}
@@ -80,6 +81,7 @@ export default class Vulva extends Component {
           </Link>
           <Link to="/vulva/Introitus vaginae">
             <img
+              className="basis"
               src="/img/Introitusvaginae.png"
               alt=""
               style={{ position: "absolute", top: "134px", left: "47%" }}
@@ -88,6 +90,7 @@ export default class Vulva extends Component {
 
           <Link to="/vulva">
             <img
+              className="basis"
               src="/img/smallleft.png"
               alt=""
               style={{ position: "absolute", top: "176px", left: "60%" }}
@@ -95,6 +98,7 @@ export default class Vulva extends Component {
           </Link>
           <Link to="/vulva">
             <img
+              className="basis"
               src="/img/smalltop.png"
               alt=""
               style={{ position: "absolute", top: "19px", left: "59.5%" }}
@@ -102,6 +106,7 @@ export default class Vulva extends Component {
           </Link>
           <Link to="/vulva">
             <img
+              className="basis"
               src="/img/smalltopleft.png"
               alt=""
               style={{ position: "absolute", top: "20px", left: "34%" }}
@@ -109,6 +114,7 @@ export default class Vulva extends Component {
           </Link>
           <Link to="/vulva/Clitoris">
             <img
+              className="basis"
               src="/img/Clitoris.png"
               alt=""
               style={{ position: "absolute", top: "8px", left: "49.5%" }}
@@ -116,6 +122,7 @@ export default class Vulva extends Component {
           </Link>
           <Link to="/vulva/Urethral Opening">
             <img
+              className="basis"
               src="/img/urethralopening.png"
               alt=""
               style={{ position: "absolute", top: "87px", left: "51.5%" }}
@@ -123,6 +130,7 @@ export default class Vulva extends Component {
           </Link>
           <Link to="/vulva">
             <img
+              className="basis"
               src="/img/right.png"
               alt=""
               style={{ position: "absolute", top: "172px", left: "28%" }}
@@ -130,29 +138,26 @@ export default class Vulva extends Component {
           </Link>
           <Link to="/vulva/Hymen">
             <img
+              className="basis"
               src="/img/hymen.png"
               alt=""
               style={{ position: "absolute", top: "250px", left: "50%" }}
             />
           </Link>
           <div className="flex-container">
-            <div>
-              <button className="btn-cut">
-                <Link className="" to={`/femalegenitalmutilation`}>
-                  <i className="fas fa-cut" />
-                </Link>
-              </button>
-            </div>
-            <div>
-              <button className="btn-cut">
-                <Link className="" to={`/uterus`}>
-                  <img src="/img/uterus.svg" />
-                </Link>
-              </button>
-            </div>
+            <button className="btn-cut">
+              <Link className="" to={`/femalegenitalmutilation`}>
+                <i className="fas fa-cut" />
+              </Link>
+            </button>
+
+            <button className="btn-cut">
+              <Link className="" to={`/uterus`}>
+                <img className="uterusicon" src="/img/uterus.svg" />
+              </Link>
+            </button>
           </div>
         </div>
-        )
       </div>
     );
   }
