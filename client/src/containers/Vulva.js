@@ -24,9 +24,6 @@ export default class Vulva extends Component {
 
   componentDidMount() {
     this.getData();
-    setTimeout(() => {
-      this.setState({ showGif: false });
-    }, 4000);
   }
   handleclick = () => {
     this.setState({ selected: "Clitoris" }, () => {

@@ -24,9 +24,6 @@ export default class Uterus extends Component {
 
   componentDidMount() {
     this.getData();
-    setTimeout(() => {
-      this.setState({ showGif: false });
-    }, 4000);
   }
   handleclick = () => {
     this.setState({ selected: "Cervix" }, () => {
@@ -134,7 +131,7 @@ export default class Uterus extends Component {
               }}
             />
           </Link>
-          <Link to="/uterus/Tuba uterina (Oviduct)">
+          <Link to="/uterus/Tuba uterina">
             <img
               src="/img/oviductleft.png"
               alt=""
@@ -147,7 +144,7 @@ export default class Uterus extends Component {
               }}
             />
           </Link>
-          <Link to="/uterus/Tuba uterina (Oviduct)">
+          <Link to="/uterus/Tuba uterina">
             <img
               src="/img/oviductright.png"
               alt=""
@@ -185,7 +182,6 @@ export default class Uterus extends Component {
             </button>
           </div>
         </div>
-        )
       </div>
     );
   }

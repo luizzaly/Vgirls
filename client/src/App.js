@@ -7,7 +7,7 @@ import Embryology from "./components/Embryology";
 import Description from "./components/Description";
 import Info from "./components/Info";
 import Typeone from "./components/Typeone";
-import Uterus from "./components/Uterus";
+import Uterus from "./containers/Uterus";
 import Video from "./components/Video";
 
 import "./App.css";
@@ -27,6 +27,7 @@ import DescriptionUterus from "./components/DescriptionUterus";
 import OverviewUterus from "./components/OverviewUterus";
 import InfoUterus from "./components/InfoUterus";
 import Gif from "./components/Gif";
+import GifUterus from "./components/GifUterus";
 
 class App extends React.Component {
   state = {
@@ -95,6 +96,7 @@ class App extends React.Component {
             />
             <Route exact path="/uterus/:title/info" component={InfoUterus} />
             <Route exact path="/Gif" component={Gif} />
+            <Route exact path="/GifUterus" component={GifUterus} />
             <Route
               exact
               path="/auth/signup"
