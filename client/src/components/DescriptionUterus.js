@@ -2,18 +2,18 @@ import React, { Component } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 
-export default class Description extends Component {
+export default class DescriptionUterus extends Component {
   state = {
-    vulva: [],
+    uterus: [],
     description: ""
   };
 
   getData = () => {
     axios
-      .get("/vulva")
+      .get("/uterus")
       .then(response => {
         this.setState({
-          vulva: response.data
+          uterus: response.data
         });
       })
       .catch(err => {
@@ -27,10 +27,10 @@ export default class Description extends Component {
   }
 
   render() {
-    console.log("////", this.props.match.params.title, this.state.vulva);
-    const vulvaPartTitle = this.props.match.params.title;
-    let bodypart = this.state.vulva.find(part => {
-      return part.title === vulvaPartTitle;
+    console.log("////", this.props.match.params.title, this.state.uterus);
+    const uterusPartTitle = this.props.match.params.title;
+    let bodypart = this.state.uterus.find(part => {
+      return part.title === uterusPartTitle;
     });
     console.log("render");
 
@@ -41,7 +41,7 @@ export default class Description extends Component {
           <p class="p-pink">{bodypart && bodypart.description}</p>
         </div>
         <button className="butn description">
-          <Link class="btn-description" to={`/vulva/${vulvaPartTitle}/info`}>
+          <Link class="btn-description" to={`/uterus/${uterusPartTitle}/info`}>
             More Info
           </Link>
         </button>

@@ -1,13 +1,56 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import axios from "axios";
+import { Z_HUFFMAN_ONLY } from "zlib";
 
 export default class Uterus extends Component {
+  state = {
+    uterus: [],
+    selected: ""
+  };
+
+  getData = () => {
+    axios
+      .get("/uterus")
+      .then(response => {
+        this.setState({
+          uterus: response.data
+        });
+      })
+      .catch(err => {
+        console.log(err);
+      });
+  };
+
+  componentDidMount() {
+    this.getData();
+    setTimeout(() => {
+      this.setState({ showGif: false });
+    }, 4000);
+  }
+  handleclick = () => {
+    this.setState({ selected: "Cervix" }, () => {
+      console.log(this.state.uterus[1]._id);
+      this.props.history.push({
+        pathname: `uterus/${this.state.uterus[1].title}`,
+        state: { title: this.state.uterus[1].title }
+      });
+    });
+  };
+
+  handleButton = e => {
+    e.preventDefault();
+  };
+
   render() {
+    let bodypart = this.state.uterus.find(part => {
+      return part.title === this.state.selected;
+    });
+
     return (
       <div>
         {/* on 1st render, this.state.projects is [] */}
         {/* after that, this.state.projects is populated by the data from the API */}
-        ) : (
         <div
           className="image-container"
           style={{
@@ -16,7 +59,7 @@ export default class Uterus extends Component {
             marginTop: "26vh"
           }}
         >
-          <Link to="">
+          <Link to="/uterus/Uterus">
             <img
               className="f"
               src="/img/uterusupperhalf.png"
@@ -29,7 +72,7 @@ export default class Uterus extends Component {
               }}
             />
           </Link>
-          <Link to="">
+          <Link to="/uterus/Cervix">
             <img
               src="/img/uterusbottomhalf.png"
               alt=""
@@ -41,7 +84,7 @@ export default class Uterus extends Component {
               }}
             />
           </Link>
-          <Link to="">
+          <Link to="/uterus/Uterus">
             <img
               src="/img/uteruspart.png"
               alt=""
@@ -53,7 +96,7 @@ export default class Uterus extends Component {
               }}
             />
           </Link>
-          <Link to="">
+          <Link to="/uterus/Vagina">
             <img
               src="/img/vagina.png"
               alt=""
@@ -65,7 +108,7 @@ export default class Uterus extends Component {
               }}
             />
           </Link>
-          <Link to="">
+          <Link to="/uterus/Ovaries">
             <img
               src="/img/ovaleft.png"
               alt=""
@@ -78,7 +121,7 @@ export default class Uterus extends Component {
               }}
             />
           </Link>
-          <Link to="">
+          <Link to="/uterus/Ovaries">
             <img
               src="/img/ovaright.png"
               alt=""
@@ -91,7 +134,7 @@ export default class Uterus extends Component {
               }}
             />
           </Link>
-          <Link to="">
+          <Link to="/uterus/Tuba uterina (Oviduct)">
             <img
               src="/img/oviductleft.png"
               alt=""
@@ -104,7 +147,7 @@ export default class Uterus extends Component {
               }}
             />
           </Link>
-          <Link to="">
+          <Link to="/uterus/Tuba uterina (Oviduct)">
             <img
               src="/img/oviductright.png"
               alt=""
@@ -117,7 +160,7 @@ export default class Uterus extends Component {
               }}
             />
           </Link>
-          <Link to="">
+          <Link to="/uterus/Cervix">
             <img
               src="/img/cervix.png"
               alt=""
@@ -129,7 +172,7 @@ export default class Uterus extends Component {
               }}
             />
           </Link>{" "}
-          {/* <div className="flex-container">
+          <div className="flex-container">
             <button className="btn-cut">
               <Link className="" to={`/femalegenitalmutilation`}>
                 <i className="fas fa-cut" />
@@ -140,8 +183,9 @@ export default class Uterus extends Component {
                 <img src="/img/uterus.svg" />
               </Link>
             </button>
-          </div> */}
+          </div>
         </div>
+        )
       </div>
     );
   }

@@ -89,4 +89,7 @@ app.use("/vulva", vulva);
 const profile = require("./routes/profile");
 app.use("/profile", profile);
 
+const uterus = require("./routes/uterus");
+app.use("/uterus", uterus);
+
 module.exports = app;
