@@ -7,15 +7,7 @@ export default class Typeonedescription extends Component {
       <div className="fgm-container">
         <h2 className="heading-type1">Female genital mutilation Type 1</h2>
         <p className="p-type1">
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-          rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-          ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-          sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-          dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
-          et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-          takimata sanctus est Lorem ipsum dolor sit amet.
+          The outer part of the clitoris or parts of it are removed
         </p>
         <button className="butn embryology">
           <Link class="btn-embryology" to={`/type2`}>

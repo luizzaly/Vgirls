@@ -7,15 +7,12 @@ export default class Typethreedescription extends Component {
       <div className="fgm-container-light">
         <h2 className="heading-type3">Female genital mutilation Type 3</h2>
         <p className="p-type3">
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-          rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-          ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-          sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-          dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
-          et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-          takimata sanctus est Lorem ipsum dolor sit amet.
+          The outer labia are cut and sewn together to create a seal over the
+          urethra and the vagina. This procedure can be done with removing the
+          clitoris and inner labia, or without. Especially this procedure has a
+          risk for ongoing infections, because the urine and menstrual fluid
+          can’t pass the hole. To have sexual intercourse or to give birth, a
+          lot of women need to be cut open again.
         </p>
         <button className="butn pink">
           <Link class="btn-pink" to={`/vulva`}>

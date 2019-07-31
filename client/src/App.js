@@ -7,7 +7,7 @@ import Embryology from "./components/Embryology";
 import Description from "./components/Description";
 import Info from "./components/Info";
 import Typeone from "./components/Typeone";
-import Uterus from "./components/Uterus";
+import Uterus from "./containers/Uterus";
 import Video from "./components/Video";
 
 import "./App.css";
@@ -22,6 +22,12 @@ import Typetwodescription from "./components/Typetwodescription";
 import Typethreedescription from "./components/Typethreedescription";
 import Fullcut from "./components/Fullcut";
 import Profile from "./components/Profile";
+import EmbryologyUterus from "./components/EmbryologyUterus";
+import DescriptionUterus from "./components/DescriptionUterus";
+import OverviewUterus from "./components/OverviewUterus";
+import InfoUterus from "./components/InfoUterus";
+import Gif from "./components/Gif";
+import GifUterus from "./components/GifUterus";
 
 class App extends React.Component {
   state = {
@@ -77,6 +83,20 @@ class App extends React.Component {
               component={Typethreedescription}
             />
             <Route exact path="/uterus" component={Uterus} />
+            <Route exact path="/uterus/:title" component={OverviewUterus} />
+            <Route
+              exact
+              path="/uterus/:title/embryology"
+              component={EmbryologyUterus}
+            />
+            <Route
+              exact
+              path="/uterus/:title/description"
+              component={DescriptionUterus}
+            />
+            <Route exact path="/uterus/:title/info" component={InfoUterus} />
+            <Route exact path="/Gif" component={Gif} />
+            <Route exact path="/GifUterus" component={GifUterus} />
             <Route
               exact
               path="/auth/signup"
