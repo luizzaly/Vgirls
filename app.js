@@ -92,4 +92,7 @@ app.use("/profile", profile);
 const uterus = require("./routes/uterus");
 app.use("/uterus", uterus);
 
+const gyn = require("./routes/gyn");
+app.use("/gyn", gyn);
+
 module.exports = app;

@@ -7,6 +7,7 @@ const mongoose = require("mongoose");
 const bcrypt = require("bcrypt");
 const User = require("../models/User");
 const Bodypart = require("../models/Bodypart");
+const Gyn = require("../models/Gyn");
 
 const bcryptSalt = 10;
 
@@ -142,6 +143,29 @@ let bodypart = [
   }
 ];
 
+let gyn = [
+  {
+    name: "Christoph Walter",
+    address: "Drakestr.32, 12205 Berlin",
+    phoneNumber: "0308314063"
+  },
+  {
+    name: "Dr.med.Annette Nickel",
+    address: "Friedrichsstr.150, 10117 Berlin",
+    phoneNumber: "030263023100"
+  },
+  {
+    name: "Dr.med.Anna Stegelmann",
+    address: "Clayallee 225a, 14195 Berlin",
+    phoneNumber: "030814576565"
+  },
+  {
+    name: "Dr.med.Kecia Schleyer",
+    address: "Kurfürstendamm 33, 10719 Berlin",
+    phoneNumber: "030322923323"
+  }
+];
+
 User.deleteMany()
   .then(() => {
     return User.create(users);
@@ -162,6 +186,15 @@ User.deleteMany()
 Bodypart.insertMany()
   .then(() => {
     return Bodypart.create(bodypart);
+  })
+  .catch(err => {
+    mongoose.disconnect();
+    throw err;
+  });
+
+Gyn.insertMany()
+  .then(() => {
+    return Gyn.create(gyn);
   })
   .catch(err => {
     mongoose.disconnect();

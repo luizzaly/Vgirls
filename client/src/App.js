@@ -28,6 +28,8 @@ import OverviewUterus from "./components/OverviewUterus";
 import InfoUterus from "./components/InfoUterus";
 import Gif from "./components/Gif";
 import GifUterus from "./components/GifUterus";
+import Gyn from "./containers/Gyn";
+import AddGyn from "./components/AddGyn";
 
 class App extends React.Component {
   state = {
@@ -119,6 +121,8 @@ class App extends React.Component {
                 />
               )}
             />
+            <Route exact path="/gyn" component={Gyn} />
+            <Route exact path="/gyn/add-gyn" component={AddGyn} />
             <Route exact path="/profile/:userId" component={Profile} />
           </Switch>
         </BrowserRouter>
