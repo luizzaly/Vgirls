@@ -37,17 +37,14 @@ export default class OverviewUterus extends Component {
     return (
       <div className="overview">
         <div className="info-card">
-          <h2>{uterusPartTitle}</h2>
-          <p>Embryology(how it all starts)</p>
-          <p>Description (how it all works)</p>
-          <p>More Info (all you need to know)</p>
+          <h2 className="info-card-blue">{uterusPartTitle}</h2>
+          <p className="info-card-blue-p">Embryology(how it all starts)</p>
+          <p className="info-card-blue-p">Description (how it all works)</p>
+          <p className="info-card-blue-p">More Info (all you need to know)</p>
         </div>
-        <button className="butn">
-          <Link
-            class="btn-overview"
-            to={`/uterus/${uterusPartTitle}/embryology`}
-          >
-            LEARN MORE
+        <button className="butn pink">
+          <Link class="btn-pink" to={`/uterus/${uterusPartTitle}/embryology`}>
+            Learn more
           </Link>
         </button>
       </div>

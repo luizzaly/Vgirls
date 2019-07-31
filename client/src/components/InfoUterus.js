@@ -40,7 +40,7 @@ export default class InfoUterus extends Component {
           <h2>More Infos (all you want to know)</h2>
           <p>{bodypart && bodypart.info}</p>
         </div>
-        <button className="butn">
+        <button className="butn embryology">
           <Link class="btn-overview" to="/GifUterus">
             Yeeah you are an expert now!
           </Link>
