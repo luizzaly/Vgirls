@@ -1,9 +1,27 @@
 .nav-style {
   text-decoration: none;
+  background-color: #ffe6e5 !important;
   position: absolute;
   top: 0;
   width: 100%;
   z-index: 30000000;
+}
+
+a.nav-item {
+  color: #b9171d;
+}
+.navbar-light .navbar-nav .show > .nav-link {
+  color: #b9171d !important;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: #b9171d !important;
+}
+.navbar-nav .dropdown-menu {
+  background-color: #b9171d !important;
+  border-style: none !important;
+}
+a.dropdownlink {
+  color: #ffe6e5 !important;
 }
 
 .body-container {
@@ -42,7 +60,7 @@ h2.header-text {
 .overview {
   height: 100vh;
   width: 100vw;
-  background-color: #ffbbba;
+  background-color: #323794;
   margin-top: 56px;
 }
 
@@ -72,6 +90,18 @@ h2.header-text {
   margin: 20px 0px 20px 0px;
 }
 
+h2.info-card-blue {
+  font-family: "Baloo";
+  font-style: normal;
+  font-weight: 400;
+  color: #ffe6e5;
+}
+
+.info-card-blue-p {
+  font-family: "Comfortaa";
+  color: #ffe6e5 !important;
+}
+
 .info-card {
   font-family: "Comfortaa";
   font-style: normal;
@@ -88,20 +118,21 @@ h2.header-text {
   font-family: "Comfortaa";
   font-style: normal;
   font-weight: 200;
-  color: #ffbbba;
+  color: #b9171d;
   text-align: left;
   align-content: center;
   padding: 20px;
 }
 .info-card-pink h2 {
-  color: #ffbbba;
+  color: #b9171d;
 }
 .p-pink {
-  color: #ffbbba !important;
+  color: #b9171d !important;
 }
 
 .white {
   color: white;
+  background-color: white;
 }
 .info-card h2 {
   font-family: "Baloo";
@@ -118,11 +149,11 @@ h2.header-text {
   -webkit-border-radius: 28;
   -moz-border-radius: 28;
   border-radius: 28px;
-  color: #ffbbba;
+  background-color: #b9171d;
+  color: #ffe6e5;
   font-family: "Baloo";
   font-style: normal;
   font-weight: 400;
-  background: white;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
   border: none;
@@ -146,7 +177,7 @@ button.butn:hover {
 }
 
 a.btn-overview {
-  color: #ffbbba;
+  color: #ffe6e5;
 }
 
 a.btn-overview:hover {
@@ -154,14 +185,14 @@ a.btn-overview:hover {
 }
 
 a.btn-embryology {
-  color: white;
+  color: #ffe6e5;
 }
 a.btn-embryology:hover {
   text-decoration: none;
 }
 
 a.btn-description {
-  color: white;
+  color: #ffe6e5;
 }
 a.btn-description:hover {
   text-decoration: none;
@@ -172,17 +203,29 @@ a.btn-description:hover {
 }
 
 .description {
-  background-color: #ffbbba;
-}
-
-.basis {
-  -webkit-transition: all 0.3s ease;
+  background-color: #b9171d;
 }
 @media only screen and (max-width: 414px) {
-  .basis:hover {
-    -webkit-transform: translateY(-40vh);
-    -ms-transform: scale(1.3);
-    transform: scale(1.08);
+  .basis {
+    animation: upsize 3s infinite linear;
+  }
+
+  @keyframes upsize {
+    0% {
+      transform: scale(1);
+    }
+    25% {
+      transform: scale(1.05);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    75% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
   }
 }
 video#background-video {
@@ -197,7 +240,7 @@ video#background-video {
 .container-gif {
   height: 100vh;
   width: 100vw;
-  background-color: #ffbbba;
+  background-color: #ffe6e5;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -208,15 +251,24 @@ video#background-video {
 }
 
 .nav-style {
-  background-color: #ffbbba;
-  color: white;
+  background-color: #ffe6e5;
+  color: #b9171d;
   font-family: "Comfortaa";
   font-style: normal;
   font-weight: 200;
 }
 
+.navbar-light .navbar-toggler {
+  color: #b9171d !important;
+  border-color: #b9171d !important;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("/img/menu.svg") !important;
+}
+
 .formstyle {
-  background-color: #ffbbba;
+  background-color: #ffe6e5;
   height: 100vh;
   color: #323794;
   font-family: "Comfortaa";
@@ -257,17 +309,22 @@ video#background-video {
 
 .btn-cut {
   padding: 10px;
-  background-color: #ffbbba;
+  background-color: #b9171d;
   border-radius: 50%;
-  height: 50px;
-  width: 50px;
-  margin-left: 10px;
+  height: 60px;
+  width: 60px;
+  margin-left: 20px;
   border-style: none;
   margin-top: 30px;
 }
 
 .fa-cut {
-  color: white;
+  color: #ffe6e5;
+  font-size: 22px;
+}
+
+.uterusicon {
+  color: #ffe6e5;
 }
 
 .fgm {
@@ -302,6 +359,75 @@ video#background-video {
 }
 
 .flex-container {
-  flex-direction: column;
-  width: 80px;
+  flex-direction: row;
+  width: 414px;
+  position: absolute;
+  top: 50vh;
+
+  justify-content: space-between;
+  text-align: center;
+}
+
+.form {
+  margin-top: 135px;
+}
+
+label.form-label {
+  color: #b9171d;
+}
+
+.form-control {
+  border: 1px solid #b9171d;
+}
+
+.fgm-container {
+  padding: 20px;
+  margin-top: 20%;
+}
+.fgm-container-light {
+  padding: 20px;
+
+  background-color: #323794;
+  height: 100vh;
+  margin-top: 0;
+}
+
+.heading-type1 {
+  font-family: "Baloo";
+  color: #323794;
+  font-weight: 400;
+}
+
+.p-type1 {
+  font-family: "Comfortaa";
+  color: #323794;
+}
+
+.heading-type2 {
+  font-family: "Baloo";
+  color: #b9171d;
+  font-weight: 400;
+}
+.p-type2 {
+  font-family: "Comfortaa";
+  color: #b9171d;
+}
+
+.heading-type3 {
+  font-family: "Baloo";
+  color: #ffe6e5;
+  font-weight: 400;
+  margin-top: 20%;
+}
+.p-type3 {
+  font-family: "Comfortaa";
+  color: #ffe6e5;
+}
+
+.pink {
+  background-color: #ffe6e5;
+}
+
+a.btn-pink {
+  color: #323794;
 }

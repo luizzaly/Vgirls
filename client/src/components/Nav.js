@@ -17,7 +17,9 @@ const Navi = props => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Navbar.Brand>
-            <Link to="/vulva">Discover your body</Link>
+            <Link className="nav-item" to="/vulva">
+              Discover your body
+            </Link>
           </Navbar.Brand>
           <Nav className="mr-auto switchsides">
             <NavDropdown title="More" id="basic-nav-dropdown">
@@ -27,7 +29,11 @@ const Navi = props => {
                     <Link to="/profile">Profile</Link>
                   </NavDropdown.Item>
                   <NavDropdown.Item>
-                    <Link onClick={() => handleLogout(props)} to="/">
+                    <Link
+                      className="dropdownlink"
+                      onClick={() => handleLogout(props)}
+                      to="/"
+                    >
                       Logout
                     </Link>
                   </NavDropdown.Item>
@@ -36,10 +42,14 @@ const Navi = props => {
                 //   <React.Fragment>
                 <>
                   <NavDropdown.Item>
-                    <Link to="/auth/signup">Signup</Link>
+                    <Link className="dropdownlink" to="/auth/signup">
+                      Signup
+                    </Link>
                   </NavDropdown.Item>
                   <NavDropdown.Item>
-                    <Link to="/auth/login">Login</Link>
+                    <Link className="dropdownlink" to="/auth/login">
+                      Login
+                    </Link>
                   </NavDropdown.Item>
                 </>
               )}

@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 export default class MutilationDescription extends Component {
   render() {
     return (
-      <div>
-        <h1>Female genital mutilation (FGM)</h1>
-        <p>
+      <div className="fgm-container">
+        <h2 className="heading-type1">Female genital mutilation (FGM)</h2>
+        <p className="p-type1">
           Let’s talk about Female genital mutilation (FGM). As a platform from
           women for women, we want to talk about all the problems females face
           around the world. One of them is FGM. FGM is a practice where parts of

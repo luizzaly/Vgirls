@@ -58,7 +58,7 @@ export default class Uterus extends Component {
         >
           <Link to="/uterus/Uterus">
             <img
-              className="f"
+              className="basis"
               src="/img/uterusupperhalf.png"
               alt=""
               style={{
@@ -71,6 +71,7 @@ export default class Uterus extends Component {
           </Link>
           <Link to="/uterus/Cervix">
             <img
+              className="basis"
               src="/img/uterusbottomhalf.png"
               alt=""
               style={{
@@ -83,6 +84,7 @@ export default class Uterus extends Component {
           </Link>
           <Link to="/uterus/Uterus">
             <img
+              className="basis"
               src="/img/uteruspart.png"
               alt=""
               style={{
@@ -95,6 +97,7 @@ export default class Uterus extends Component {
           </Link>
           <Link to="/uterus/Vagina">
             <img
+              className="basis"
               src="/img/vagina.png"
               alt=""
               style={{
@@ -107,6 +110,7 @@ export default class Uterus extends Component {
           </Link>
           <Link to="/uterus/Ovaries">
             <img
+              className="basis"
               src="/img/ovaleft.png"
               alt=""
               style={{
@@ -120,6 +124,7 @@ export default class Uterus extends Component {
           </Link>
           <Link to="/uterus/Ovaries">
             <img
+              className="basis"
               src="/img/ovaright.png"
               alt=""
               style={{
@@ -133,6 +138,7 @@ export default class Uterus extends Component {
           </Link>
           <Link to="/uterus/Tuba uterina">
             <img
+              className="basis"
               src="/img/oviductleft.png"
               alt=""
               style={{
@@ -146,6 +152,7 @@ export default class Uterus extends Component {
           </Link>
           <Link to="/uterus/Tuba uterina">
             <img
+              className="basis"
               src="/img/oviductright.png"
               alt=""
               style={{
@@ -159,6 +166,7 @@ export default class Uterus extends Component {
           </Link>
           <Link to="/uterus/Cervix">
             <img
+              className="basis"
               src="/img/cervix.png"
               alt=""
               style={{
@@ -177,7 +185,7 @@ export default class Uterus extends Component {
             </button>
             <button className="btn-cut">
               <Link className="" to={`/femalegenitalmutilation`}>
-                <img src="/img/uterus.svg" />
+                <img className="uterusicon" src="/img/uterus.svg" />
               </Link>
             </button>
           </div>
