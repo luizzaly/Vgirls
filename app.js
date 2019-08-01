@@ -88,7 +88,7 @@ app.use("/auth", authRoutes);
 const vulva = require("./routes/vulva");
 app.use("/vulva", vulva);
 
-const profile = require("./routes/profile");
+const profile = require("./routes/Profile");
 app.use("/profile", profile);
 
 const uterus = require("./routes/uterus");
