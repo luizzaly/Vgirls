@@ -54,7 +54,7 @@ export default class Profile extends Component {
 
   render() {
     return (
-      <div className="down">
+      <div className="profile">
         <h2>Welcome {this.state.username}</h2>
 
         <h3>Change your Profile</h3>

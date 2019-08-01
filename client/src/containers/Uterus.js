@@ -188,6 +188,11 @@ export default class Uterus extends Component {
                 <img className="uterusicon" src="/img/uterus.svg" />
               </Link>
             </button>
+            <button className="btn-cut">
+              <Link className="" to={`/gyn`}>
+                <img className="uterusicon" src="/img/uterus.svg" />
+              </Link>
+            </button>
           </div>
         </div>
       </div>

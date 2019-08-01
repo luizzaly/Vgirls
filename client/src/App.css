@@ -432,6 +432,13 @@ a.btn-pink {
   color: #323794;
 }
 
-.down {
-  margin-top: 50px;
+.profile {
+  background-color: #ffe6e5;
+  font-family: "Comfortaa";
+  height: 100vh;
+}
+
+h2.profile {
+  font-family: "Baloo";
+  color: #b9171d;
 }
