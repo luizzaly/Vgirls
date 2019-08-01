@@ -45,31 +45,38 @@ export default class Gyn extends Component {
 
   render() {
     return (
-      <div className="list-container">
-        {/* on 1st render, this.state.gyns is [] */}
-        {/* after that, this.state.gyns is populated by the data from the DB */}
-        <input
-          className="search-bar"
-          type="text"
-          value={this.state.search}
-          onChange={this.handleSubmit}
-        />
+      <div>
+        <button>
+          <Link className="" to={`/gyn/add-gyn`}>
+            <img src="/img/add.svg" />
+          </Link>
+        </button>
+        <div className="list-container">
+          {/* on 1st render, this.state.gyns is [] */}
+          {/* after that, this.state.gyns is populated by the data from the DB */}
+          <input
+            className="search-bar"
+            type="text"
+            value={this.state.search}
+            onChange={this.handleSubmit}
+          />
 
-        {this.state.gyns
-          .filter(gyn => {
-            return (
-              gyn.address
-                .toLowerCase()
-                .includes(this.state.search.toLowerCase()) && gyn
-            );
-          })
-          .map(gyn => (
-            <GynListItem
-              gyn={gyn}
-              handleClick={this.handleClick}
-              user={this.props.user}
-            />
-          ))}
+          {this.state.gyns
+            .filter(gyn => {
+              return (
+                gyn.address
+                  .toLowerCase()
+                  .includes(this.state.search.toLowerCase()) && gyn
+              );
+            })
+            .map(gyn => (
+              <GynListItem
+                gyn={gyn}
+                handleClick={this.handleClick}
+                user={this.props.user}
+              />
+            ))}
+        </div>
       </div>
     );
   }

@@ -69,7 +69,7 @@ export default class Uterus extends Component {
               }}
             />
           </Link>
-          <Link to="/uterus/Cervix">
+          <Link to="/uterus/Uterus">
             <img
               className="basis"
               src="/img/uterusbottomhalf.png"

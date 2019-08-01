@@ -17,16 +17,12 @@ export default class GifUterus extends Component {
       "https://media.giphy.com/media/cMQUfOPEd9zsZwAfKs/giphy.gif"
     ]
   };
-  componentDidMount() {
-    setTimeout(() => {
-      this.setState({ showGif: false });
-    }, 4000);
+  componentWillMount() {
+    this.setState();
   }
 
   render() {
-    let randomGif = [
-      Math.floor(Math.random() * (this.state.gifArray.length + 1))
-    ];
+    let randomGif = [Math.floor(Math.random() * this.state.gifArray.length)];
     let ourGif = this.state.gifArray[randomGif];
     console.log(ourGif);
     return (
