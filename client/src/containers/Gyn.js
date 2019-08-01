@@ -56,6 +56,12 @@ export default class Gyn extends Component {
           onChange={this.handleSubmit}
         />
 
+        <div className="add-gyn-container">
+          <Link className="add-gyn-link" to={`/gyn/add-gyn`}>
+            Add your gyn <img className="plus-icon" src="/img/plus.svg" />
+          </Link>
+        </div>
+
         {this.state.gyns
           .filter(gyn => {
             return (

@@ -17,6 +17,9 @@ const Navi = props => {
         collapseOnSelect
         expand="lg"
       >
+        <div className="logo-navbar">
+          <h3>Vgirls</h3>
+        </div>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Navbar.Brand>
