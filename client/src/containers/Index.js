@@ -5,11 +5,14 @@ const Home = () => {
   return (
     <div>
       <div class="header-container">
-        <h1 class="valueprop">Empower yourself</h1>
-        <br />
-        <h1 class="valuepropo">Let's discover the female body</h1>
-
-        <h3 class="header-text">We are all different</h3>
+        <div className="value-prop-container">
+          <h1 class="valueprop">Empower yourself</h1>
+          <br />
+          <h1 class="valuepropo">Let's discover the female body</h1>
+        </div>
+        <div className="index-header">
+          <h3 class="header-text">We are all different</h3>
+        </div>
       </div>
       <div className="carouselcolor">
         <Carousel>
