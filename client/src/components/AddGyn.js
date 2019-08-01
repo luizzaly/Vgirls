@@ -33,7 +33,7 @@ export default class AddGyn extends Component {
   render() {
     return (
       <div className="down">
-        <form className="profile" onSubmit={this.handleSubmit}>
+        <form className="profile add-gyn-profile" onSubmit={this.handleSubmit}>
           <h2 className="profile-welcome">Add your Gyn</h2>
           <label>
             Tell us your favourite OB-GYN:

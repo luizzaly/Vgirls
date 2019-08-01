@@ -57,7 +57,7 @@ export default class Profile extends Component {
       <div className="down">
         <h2 className="profile-welcome">Welcome {this.state.username}</h2>
 
-        <div className="profile">
+        <div className="profile add-gyn-profile">
           <Form onSubmit={this.handleSubmit}>
             <Form.Group>
               <Form.Label htmlFor="username">Change your Username:</Form.Label>
