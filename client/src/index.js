@@ -8,7 +8,7 @@ import axios from "axios";
 
 ReactDOM.render(<App />, document.getElementById("root"));
 axios
-  .get("/auth/loggedin")
+  .get("/api/auth/loggedin")
   .then(response => {
     ReactDOM.render(
       <BrowserRouter>

@@ -79,26 +79,23 @@ app.use(
 app.use(flash());
 require("./passport")(app);
 
-const index = require("./routes/index");
-app.use("/", index);
-
 const authRoutes = require("./routes/auth");
-app.use("/auth", authRoutes);
+app.use("/api/auth", authRoutes);
 
 const vulva = require("./routes/vulva");
-app.use("/vulva", vulva);
+app.use("/api/vulva", vulva);
 
 const profile = require("./routes/Profile");
-app.use("/profile", profile);
+app.use("/api/profile", profile);
 
 const uterus = require("./routes/uterus");
-app.use("/uterus", uterus);
+app.use("/api/uterus", uterus);
 
 const gyn = require("./routes/gyn");
-app.use("/gyn", gyn);
+app.use("/api/gyn", gyn);
 
 const like = require("./routes/like");
-app.use("/like", like);
+app.use("/api/like", like);
 
 app.use((req, res) => {
   // If no routes match, send them the React HTML.

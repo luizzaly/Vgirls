@@ -11,7 +11,7 @@ export default class Vulva extends Component {
 
   getData = () => {
     axios
-      .get("/vulva")
+      .get("/api/vulva")
       .then(response => {
         this.setState({
           vulva: response.data

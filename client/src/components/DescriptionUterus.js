@@ -10,7 +10,7 @@ export default class DescriptionUterus extends Component {
 
   getData = () => {
     axios
-      .get("/uterus")
+      .get("/api/uterus")
       .then(response => {
         this.setState({
           uterus: response.data

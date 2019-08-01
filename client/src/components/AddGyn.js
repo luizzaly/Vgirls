@@ -20,7 +20,7 @@ export default class AddGyn extends Component {
     event.preventDefault();
 
     axios
-      .post("/gyn/add-gyn", {
+      .post("/api/gyn/add-gyn", {
         name,
         address,
         phoneNumber

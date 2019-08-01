@@ -12,7 +12,7 @@ export default class Profile extends Component {
 
   getData = () => {
     axios
-      .get("/profile")
+      .get("/api/profile")
       .then(response => {
         this.setState({
           username: response.data,

@@ -16,7 +16,7 @@ export default class Gyn extends Component {
 
   handleClick = gynId => {
     axios
-      .put("/like", { id: gynId })
+      .put("/api/like", { id: gynId })
       .then(response => {
         let updatedGyns = this.state.gyns.map(el => {
           if (el._id === response.data._id) return response.data;
@@ -29,7 +29,7 @@ export default class Gyn extends Component {
 
   getData = () => {
     axios
-      .get("/gyn")
+      .get("/api/gyn")
       .then(response => {
         this.setState({
           gyns: response.data

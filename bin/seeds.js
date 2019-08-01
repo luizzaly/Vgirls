@@ -188,19 +188,15 @@ User.deleteMany()
     throw err;
   });
 
-Bodypart.insertMany()
-  .then(() => {
-    return Bodypart.create(bodypart);
-  })
+Bodypart.insertMany(bodypart)
+  .then(() => {})
   .catch(err => {
     mongoose.disconnect();
     throw err;
   });
 
-Gyn.insertMany()
-  .then(() => {
-    return Gyn.create(gyn);
-  })
+Gyn.insertMany(gyn)
+  .then(() => {})
   .catch(err => {
     mongoose.disconnect();
     throw err;
