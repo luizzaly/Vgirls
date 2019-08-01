@@ -54,47 +54,52 @@ export default class Profile extends Component {
 
   render() {
     return (
-      <div className="profile">
-        <Form onSubmit={this.handleSubmit}>
-          <Form.Group>
-            <Form.Label htmlFor="username">Change your Username:</Form.Label>
-            <Form.Control
-              type="text"
-              name="username"
-              id="username"
-              value={this.state.username}
-              onChange={this.handleChange}
-            />
-          </Form.Group>
-          <Form.Group>
-            <Form.Label htmlFor="password">Change your Password:</Form.Label>
-            <Form.Control
-              type="password"
-              name="password"
-              id="password"
-              value={this.state.password}
-              onChange={this.handleChange}
-            />
-          </Form.Group>
-          <Form.Group>
-            <Form.Label htmlFor="email">Change your E-mail:</Form.Label>
-            <Form.Control
-              type="text"
-              name="email"
-              id="email"
-              value={this.state.email}
-              onChange={this.handleChange}
-            />
-          </Form.Group>
+      <div className="down">
+        <h2>Welcome {this.state.username}</h2>
 
-          {this.state.error && (
-            <Alert variant="warning">{this.state.error}</Alert>
-          )}
+        <h3>Change your Profile</h3>
+        <div className="profile">
+          <Form onSubmit={this.handleSubmit}>
+            <Form.Group>
+              <Form.Label htmlFor="username">Change your Username:</Form.Label>
+              <Form.Control
+                type="text"
+                name="username"
+                id="username"
+                value={this.state.username}
+                onChange={this.handleChange}
+              />
+            </Form.Group>
+            <Form.Group>
+              <Form.Label htmlFor="password">Change your Password:</Form.Label>
+              <Form.Control
+                type="password"
+                name="password"
+                id="password"
+                value={this.state.password}
+                onChange={this.handleChange}
+              />
+            </Form.Group>
+            <Form.Group>
+              <Form.Label htmlFor="email">Change your E-mail:</Form.Label>
+              <Form.Control
+                type="text"
+                name="email"
+                id="email"
+                value={this.state.email}
+                onChange={this.handleChange}
+              />
+            </Form.Group>
 
-          <Button className="loginbtn" type="submit">
-            SAVE
-          </Button>
-        </Form>
+            {this.state.error && (
+              <Alert variant="warning">{this.state.error}</Alert>
+            )}
+
+            <Button className="loginbtn" type="submit">
+              SAVE
+            </Button>
+          </Form>
+        </div>
       </div>
     );
   }
