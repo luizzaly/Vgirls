@@ -446,3 +446,19 @@ h3.profile {
   font-family: "Baloo";
   color: #b9171d;
 }
+
+.list-container {
+  margin-top: 14%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 414px;
+}
+
+.search-bar {
+  border-color: pink;
+
+  width: 100%;
+  margin: 0 auto;
+  height: 43px;
+}
