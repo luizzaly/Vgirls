@@ -120,7 +120,11 @@ class App extends React.Component {
                 />
               )}
             />
-            <Route exact path="/gyn" component={Gyn} />
+            <Route
+              exact
+              path="/gyn"
+              render={props => <Gyn user={this.state.user} {...props} />}
+            />
             <Route exact path="/gyn/add-gyn" component={AddGyn} />
             <Route exact path="/profile/:userId" component={Profile} />
           </Switch>

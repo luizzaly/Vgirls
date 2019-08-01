@@ -5,12 +5,11 @@ import { logout } from "../services/api";
 
 const handleLogout = props => {
   logout().then(() => {
-    props.setUser(null);
+    // props.setUser(null);
   });
 };
 
 const Navi = props => {
-  console.log(props);
   return (
     <div>
       <Navbar className="nav nav-style" collapseOnSelect expand="lg">
