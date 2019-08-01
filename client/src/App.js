@@ -8,7 +8,6 @@ import Description from "./components/Description";
 import Info from "./components/Info";
 import Typeone from "./components/Typeone";
 import Uterus from "./containers/Uterus";
-import Video from "./components/Video";
 
 import "./App.css";
 import Index from "./containers/Index";

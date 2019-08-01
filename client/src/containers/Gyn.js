@@ -4,7 +4,13 @@ import GynListItem from "./GynListItem";
 
 export default class Gyn extends Component {
   state = {
-    gyns: []
+    gyns: [],
+    search: ""
+  };
+
+  handleSubmit = event => {
+    event.preventDefault();
+    this.setState({ search: event.target.value });
   };
 
   handleClick = gynId => {
@@ -35,19 +41,34 @@ export default class Gyn extends Component {
   componentDidMount() {
     this.getData();
   }
+
   render() {
     return (
       <div>
         {/* on 1st render, this.state.gyns is [] */}
         {/* after that, this.state.gyns is populated by the data from the DB */}
 
-        {this.state.gyns.map(gyn => (
-          <GynListItem
-            gyn={gyn}
-            handleClick={this.handleClick}
-            user={this.props.user}
-          />
-        ))}
+        {this.state.gyns
+          .filter(gyn => {
+            return (
+              gyn.address
+                .toLowerCase()
+                .includes(this.state.search.toLowerCase()) && gyn
+            );
+          })
+          .map(gyn => (
+            <GynListItem
+              gyn={gyn}
+              handleClick={this.handleClick}
+              user={this.props.user}
+            />
+          ))}
+
+        <input
+          type="text"
+          value={this.state.search}
+          onChange={this.handleSubmit}
+        />
       </div>
     );
   }

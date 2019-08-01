@@ -32,9 +32,11 @@ router.post("/add-gyn", (req, res, next) => {
     name,
     address,
     phoneNumber
-  }).then(data => {
-    res.json(data);
-  });
+  })
+    .then(data => {
+      res.json(data);
+    })
+    .catch(err => res.json(err));
 });
 
 module.exports = router;
