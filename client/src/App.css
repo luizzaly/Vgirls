@@ -32,11 +32,8 @@ a.dropdownlink {
 }
 
 .header-container {
-  background-image: url("/img/headerimage.png");
-  height: 54vh;
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #ffe6e5;
+  height: 50vh;
 }
 
 .valueprop {
@@ -47,15 +44,33 @@ a.dropdownlink {
   font-family: "Comfortaa";
   font-weight: 600;
   letter-spacing: -1px;
-  color: #ffbbba;
+  color: #ffe6e5;
+  background-color: #b9171d;
+  margin: 5px;
+  padding: 8px;
+}
+.valuepropo {
+  position: absolute;
+  top: 20%;
+  padding: 0px 0px 0px 20px;
+  font-size: 25px;
+  font-family: "Comfortaa";
+  font-weight: 600;
+  letter-spacing: -1px;
+  color: #ffe6e5;
+  background-color: #b9171d;
+  margin: 5px;
+  padding: 8px;
 }
 
-h2.header-text {
+h3.header-text {
   font-size: 30px;
   font-family: "Comfortaa";
   font-weight: 600;
   letter-spacing: -1px;
   padding: 20px 0px 0px 20px;
+  color: #323794;
+  margin-top: 70%;
 }
 .overview {
   height: 100vh;
@@ -461,4 +476,34 @@ h3.profile {
   width: 100%;
   margin: 0 auto;
   height: 43px;
+}
+.carouselcolor {
+  background-color: #323794;
+}
+
+.dreieck {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  margin-top: -0.75px;
+  border-color: #323794 transparent #323794 transparent;
+  border-width: 10vh 50vw 0 50vw;
+  background-color: #ffe6e5;
+}
+.about {
+  background-color: #ffe6e5;
+}
+.containerIndex {
+  background-color: #ffe6e5;
+}
+.about h3 {
+  font-family: "Baloo";
+  color: #b9171d;
+  text-align: center;
+  padding: 15px;
+}
+.about p {
+  font-family: "Baloo";
+  color: #b9171d;
+  padding-bottom: 20px;
 }
