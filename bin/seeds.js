@@ -147,16 +147,19 @@ let gyn = [
   {
     name: "Christoph Walter",
     address: "Drakestr.32, 12205 Berlin",
+
     phoneNumber: "0308314063"
   },
   {
     name: "Dr.med.Annette Nickel",
     address: "Friedrichsstr.150, 10117 Berlin",
+
     phoneNumber: "030263023100"
   },
   {
     name: "Dr.med.Anna Stegelmann",
     address: "Clayallee 225a, 14195 Berlin",
+
     phoneNumber: "030814576565"
   },
   {

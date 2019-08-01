@@ -14,10 +14,14 @@ export default class GifUterus extends Component {
       "https://media.giphy.com/media/9rrljkZoLqxZMDvQn0/giphy.gif",
       "https://media.giphy.com/media/TEnq1cc5pEb2Sz8pwP/giphy.gif",
       "https://media.giphy.com/media/3kHBUxaBZSSk4x3j3x/giphy.gif",
-      "https://media.giphy.com/media/cMQUfOPEd9zsZwAfKs/giphy.gif",
-      "https://media.giphy.com/media/aiWj4oJU17sioqy65J/giphy.gif"
+      "https://media.giphy.com/media/cMQUfOPEd9zsZwAfKs/giphy.gif"
     ]
   };
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({ showGif: false });
+    }, 4000);
+  }
 
   render() {
     let randomGif = [

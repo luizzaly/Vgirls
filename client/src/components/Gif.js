@@ -19,11 +19,11 @@ export default class Gif extends Component {
       "https://media.giphy.com/media/Jrf6QkGpuob4qHAoxL/giphy.gif"
     ]
   };
-  // componentDidMount() {
-  //   setTimeout(() => {
-  //     this.setState({ showGif: false });
-  //   }, 4000);
-  // }
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({ showGif: false });
+    }, 4000);
+  }
 
   render() {
     let randomGif = [
