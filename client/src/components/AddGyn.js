@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import { Form, Button, Alert } from "react-bootstrap";
 
 export default class AddGyn extends Component {
   state = {
@@ -31,9 +32,9 @@ export default class AddGyn extends Component {
 
   render() {
     return (
-      <div>
-        <form onSubmit={this.handleSubmit}>
-          <h3>Add your Gyn</h3>
+      <div className="down">
+        <form className="profile" onSubmit={this.handleSubmit}>
+          <h2 className="profile-welcome">Add your Gyn</h2>
           <label>
             Tell us your favourite OB-GYN:
             <input
@@ -44,7 +45,7 @@ export default class AddGyn extends Component {
             />
           </label>
 
-          <label>
+          <label className="adress-flex">
             Tell us the address:
             <textarea
               value={this.state.address}
@@ -62,9 +63,9 @@ export default class AddGyn extends Component {
               onChange={this.handleChange}
             />
           </label>
-          <button>
-            <input type="submit" value="Submit" />
-          </button>
+          <Button className="butn add-gyn" type="submit">
+            Save
+          </Button>
         </form>
       </div>
     );

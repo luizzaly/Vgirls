@@ -618,3 +618,31 @@ span.navbar-brand {
     transform: skew(0deg);
   }
 }
+label {
+  color: #b9171d;
+  font-family: "Comfortaa";
+}
+input {
+  border: 1px solid #b9171d;
+  border-radius: 3px;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+}
+
+.add-gyn {
+  position: initial;
+  margin-top: 240px;
+  width: 130px;
+  margin-left: 123px;
+}
+.adress-flex {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+textarea {
+  border: 1px solid #b9171d;
+  border-radius: 3px;
+  height: 100px;
+}
