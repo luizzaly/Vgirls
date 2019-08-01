@@ -435,3 +435,19 @@ a.btn-pink {
 .down {
   margin-top: 50px;
 }
+
+.list-container {
+  margin-top: 14%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 414px;
+}
+
+.search-bar {
+  border-color: pink;
+
+  width: 100%;
+  margin: 0 auto;
+  height: 43px;
+}

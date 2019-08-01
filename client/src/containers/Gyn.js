@@ -44,9 +44,15 @@ export default class Gyn extends Component {
 
   render() {
     return (
-      <div>
+      <div className="list-container">
         {/* on 1st render, this.state.gyns is [] */}
         {/* after that, this.state.gyns is populated by the data from the DB */}
+        <input
+          className="search-bar"
+          type="text"
+          value={this.state.search}
+          onChange={this.handleSubmit}
+        />
 
         {this.state.gyns
           .filter(gyn => {
@@ -63,12 +69,6 @@ export default class Gyn extends Component {
               user={this.props.user}
             />
           ))}
-
-        <input
-          type="text"
-          value={this.state.search}
-          onChange={this.handleSubmit}
-        />
       </div>
     );
   }
