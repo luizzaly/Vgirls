@@ -20,15 +20,15 @@ export default class Gif extends Component {
     ]
   };
   // componentDidMount() {
-  //   setTimeout(() => {
-  //     this.setState({ showGif: false });
-  //   }, 4000);
+  //   this.setState({ showGif: false });
   // }
+  componentDidMount() {
+    console.log(this.props.user);
+  }
 
   render() {
-    let randomGif = [
-      Math.floor(Math.random() * (this.state.gifArray.length + 1))
-    ];
+    console.log(this.props.user);
+    let randomGif = [Math.floor(Math.random() * this.state.gifArray.length)];
     let ourGif = this.state.gifArray[randomGif];
     console.log(ourGif);
     return (

@@ -3,6 +3,7 @@ const Schema = mongoose.Schema;
 
 const gynSchema = new Schema({
   name: String,
+
   address: String,
   phoneNumber: String,
   likes: [{ type: Schema.Types.ObjectId }]

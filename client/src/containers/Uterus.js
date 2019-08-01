@@ -69,7 +69,7 @@ export default class Uterus extends Component {
               }}
             />
           </Link>
-          <Link to="/uterus/Cervix">
+          <Link to="/uterus/Uterus">
             <img
               className="basis"
               src="/img/uterusbottomhalf.png"
@@ -185,6 +185,11 @@ export default class Uterus extends Component {
             </button>
             <button className="btn-cut">
               <Link className="" to={`/femalegenitalmutilation`}>
+                <img className="uterusicon" src="/img/uterus.svg" />
+              </Link>
+            </button>
+            <button className="btn-cut">
+              <Link className="" to={`/gyn`}>
                 <img className="uterusicon" src="/img/uterus.svg" />
               </Link>
             </button>
