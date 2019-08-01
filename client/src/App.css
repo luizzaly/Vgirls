@@ -565,11 +565,56 @@ label.form-label {
 }
 
 .center-button {
-  margin: 9px 0px 28px 87px;
+  margin: 9px 0px 28px 95px;
   position: absolute;
   bottom: 40px;
 }
 
 .center-more {
   margin: 9px 0px 28px 121px;
+}
+
+span.navbar-brand {
+  padding: 20px 0px 0px 0px;
+  margin: 0;
+}
+.navbar-collapse {
+  text-align: right;
+}
+
+.logo-slider {
+  text-align: center;
+  margin-top: -50px;
+}
+
+.vgirls {
+  animation: slideMe 0.7s ease-in;
+  font-size: 80px;
+  font-weight: 900;
+  color: #b9171d;
+  font-family: "Baloo";
+}
+
+@keyframes slideMe {
+  0% {
+    transform: skewX(53deg) translateX(-500px);
+  }
+  60% {
+    transform: translateX(0px);
+  }
+  62% {
+    transform: skewX(0deg) translateX(30px);
+  }
+  70% {
+    transform: skew(-20deg);
+  }
+  80% {
+    transform: skew(0deg) translate(0px);
+  }
+  90% {
+    transform: skew(-5deg);
+  }
+  100% {
+    transform: skew(0deg);
+  }
 }

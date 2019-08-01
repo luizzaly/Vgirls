@@ -12,7 +12,11 @@ const handleLogout = props => {
 const Navi = props => {
   return (
     <div>
-      <Navbar className="nav nav-style" collapseOnSelect expand="lg">
+      <Navbar
+        className="d-flex justify-content-end nav nav-style"
+        collapseOnSelect
+        expand="lg"
+      >
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Navbar.Brand>

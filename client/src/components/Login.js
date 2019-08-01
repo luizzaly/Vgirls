@@ -39,6 +39,9 @@ export default class Login extends Component {
   render() {
     return (
       <div className="formstyle">
+        <div className="logo-slider">
+          <h1 className="vgirls"> Vgirls </h1>
+        </div>
         <div className="center">
           <Form onSubmit={this.handleSubmit}>
             <Form.Group>
