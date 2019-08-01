@@ -49,6 +49,7 @@ export default class Gyn extends Component {
         {/* after that, this.state.gyns is populated by the data from the DB */}
         <input
           className="search-bar"
+          placeholder="Search Gyn near by"
           type="text"
           value={this.state.search}
           onChange={this.handleSubmit}

@@ -4,28 +4,30 @@ class GynListItem extends Component {
   render() {
     return (
       <div>
-        <div key={this.props.gyn._id}>
-          <h3>{this.props.gyn.name}</h3>
-          <h3>{this.props.gyn.address}</h3>
-          <h3>{this.props.gyn.phoneNumber}</h3>
+        <div className="gyn-container" key={this.props.gyn._id}>
+          <h3 className="gyn-name">{this.props.gyn.name}</h3>
+          <p>{this.props.gyn.address}</p>
+          <p>{this.props.gyn.phoneNumber}</p>
 
-          <h3>{this.props.gyn.likes.length}</h3>
-          {this.props.user &&
-          this.props.gyn.likes.includes(this.props.user._id) ? (
-            <button
-              className="btn btn-danger"
-              onClick={() => this.props.handleClick(this.props.gyn._id)}
-            >
-              Unlike{" "}
-            </button>
-          ) : (
-            <button
-              className="btn btn-primary"
-              onClick={() => this.props.handleClick(this.props.gyn._id)}
-            >
-              Like
-            </button>
-          )}
+          <div className="like-container">
+            <p className="user-likes">{this.props.gyn.likes.length}</p>
+            {this.props.user &&
+            this.props.gyn.likes.includes(this.props.user._id) ? (
+              <button
+                className="heart-grey"
+                onClick={() => this.props.handleClick(this.props.gyn._id)}
+              >
+                <i class="fas fa-heart red" />
+              </button>
+            ) : (
+              <button
+                className="heart-red"
+                onClick={() => this.props.handleClick(this.props.gyn._id)}
+              >
+                <i class="fas fa-heart grey " />
+              </button>
+            )}
+          </div>
         </div>
       </div>
     );

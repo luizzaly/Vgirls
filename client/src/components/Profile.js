@@ -55,9 +55,8 @@ export default class Profile extends Component {
   render() {
     return (
       <div className="down">
-        <h2>Welcome {this.state.username}</h2>
+        <h2 className="profile-welcome">Welcome {this.state.username}</h2>
 
-        <h3>Change your Profile</h3>
         <div className="profile">
           <Form onSubmit={this.handleSubmit}>
             <Form.Group>
@@ -95,8 +94,11 @@ export default class Profile extends Component {
               <Alert variant="warning">{this.state.error}</Alert>
             )}
 
-            <Button className="loginbtn" type="submit">
-              SAVE
+            <Button
+              className="butn description profile-button center-button center-more"
+              type="submit"
+            >
+              Save
             </Button>
           </Form>
         </div>

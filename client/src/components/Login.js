@@ -66,8 +66,11 @@ export default class Login extends Component {
               <Alert variant="warning">{this.state.error}</Alert>
             )}
 
-            <Button className="loginbtn" type="submit">
-              LOGIN
+            <Button
+              className="butn description profile-button center-button"
+              type="submit"
+            >
+              Login
             </Button>
           </Form>
         </div>
