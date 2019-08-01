@@ -12,7 +12,9 @@ const Gyn = require("../models/Gyn");
 const bcryptSalt = 10;
 
 mongoose
-  .connect("mongodb://localhost/app", { useNewUrlParser: true })
+  .connect(process.env.MONGODB_URI || "mongodb://localhost/app", {
+    useNewUrlParser: true
+  })
   .then(x => {
     console.log(
       `Connected to Mongo! Database name: "${x.connections[0].name}"`
