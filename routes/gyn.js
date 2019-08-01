@@ -5,7 +5,6 @@ const Gyn = require("../models/Gyn");
 router.get("/", (req, res) => {
   Gyn.find()
     .then(gyns => {
-      console.log(gyns);
       res.json(gyns);
     })
     .catch(err => {

@@ -95,4 +95,7 @@ app.use("/uterus", uterus);
 const gyn = require("./routes/gyn");
 app.use("/gyn", gyn);
 
+const like = require("./routes/like");
+app.use("/like", like);
+
 module.exports = app;

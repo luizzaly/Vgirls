@@ -24,6 +24,7 @@ export default class Signup extends Component {
 
     signup(username, password, email)
       .then(data => {
+        console.log(data);
         this.props.setUser(data);
         this.props.history.push("/vulva");
       })
