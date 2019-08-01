@@ -29,7 +29,7 @@ export default class MutilationDescription extends Component {
           different forms and the dangers of the procedure. This ritual needs to
           be stopped. The following drawings can be traumatizing for some.
         </p>
-        <button className="butn embryology">
+        <button className="butn embryology bottom">
           <Link class="btn-embryology" to={`/type1`}>
             See FGM
           </Link>

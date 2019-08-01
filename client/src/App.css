@@ -646,3 +646,7 @@ textarea {
   border-radius: 3px;
   height: 100px;
 }
+
+.bottom {
+  position: inherit;
+}
